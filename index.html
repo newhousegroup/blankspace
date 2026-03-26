@@ -1,0 +1,25 @@
+<div id="app">
+  <div style="height:200vh;"></div>
+
+  <p>
+    <a href="#" onclick="about()">about</a>
+  </p>
+</div>
+
+<script>
+const original = document.getElementById("app").innerHTML;
+
+function about() {
+  document.getElementById("app").innerHTML = `
+      <h1>about</h1>
+      <p>this page is a blank space because it is. this website was made purely from boredom</p>
+      <p>however the existence of this about section means this website is actually <i>not</i> a blank space</p>
+      <a href="#" onclick="back()">exit</a>
+      <a href="https://newhs.cc">more newhouse projects</a>
+  `;
+}
+
+function back() {
+  document.getElementById("app").innerHTML = original;
+}
+</script>
